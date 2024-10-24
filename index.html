@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Translator App</h1>
+    <textarea id="text-input" placeholder="Masukkan teks..."></textarea>
+
+    <select id="language-select">
+        <option value="en">English</option>
+        <option value="id">Indonesian</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+    </select>
+
+    <button onclick="translateText()">Translate</button>
+
+    <p id="translated-text">Terjemahan akan muncul di sini...</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
