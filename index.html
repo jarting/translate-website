@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Translator</title>
+    <title>DeepL Translator - Material Design</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Translator App</h1>
-    <textarea id="text-input" placeholder="Masukkan teks..."></textarea>
+    <div class="container">
+        <h1>DeepL Translator</h1>
+        <div class="input-group">
+            <textarea id="text-input" placeholder="Enter text..."></textarea>
+            <button id="copy-input" class="copy-btn">Copy Input</button>
+        </div>
 
-    <select id="language-select">
-        <option value="en">English</option>
-        <option value="id">Indonesian</option>
-        <option value="es">Spanish</option>
-        <option value="fr">French</option>
-    </select>
+        <div class="language-controls">
+            <select id="input-language">
+                <option value="EN">English</option>
+                <option value="ID">Indonesian</option>
+                <option value="ES">Spanish</option>
+                <option value="FR">French</option>
+            </select>
+            <button id="switch-lang">&#8646; Switch</button>
+            <select id="output-language">
+                <option value="ID">Indonesian</option>
+                <option value="EN">English</option>
+                <option value="ES">Spanish</option>
+                <option value="FR">French</option>
+            </select>
+        </div>
 
-    <button onclick="translateText()">Translate</button>
+        <button onclick="translateText()" class="translate-btn">Translate</button>
 
-    <p id="translated-text">Terjemahan akan muncul di sini...</p>
+        <div class="output-group">
+            <p id="translated-text">Translation will appear here...</p>
+            <button id="copy-output" class="copy-btn">Copy Output</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
