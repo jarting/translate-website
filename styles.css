@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f0f0f0;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin: 10px 0;
+}
+
+select, button {
+    margin: 5px;
+    padding: 10px;
+}
+
+#translated-text {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
