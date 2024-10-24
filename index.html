@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeepL Translator - Material Design</title>
+    <title>LibreTranslate - Auto Translate</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>DeepL Translator</h1>
-        <div class="input-group">
-            <textarea id="text-input" placeholder="Enter text..."></textarea>
-            <button id="copy-input" class="copy-btn">Copy Input</button>
+        <h1>Auto Translator</h1>
+
+        <div class="translation-box">
+            <div class="input-group">
+                <h2>Input</h2>
+                <textarea id="text-input" placeholder="Enter text..."></textarea>
+                <button id="copy-input" class="copy-btn">Copy Input</button>
+            </div>
+
+            <div class="output-group">
+                <h2>Output</h2>
+                <textarea id="translated-text" readonly placeholder="Translation will appear here..."></textarea>
+                <button id="copy-output" class="copy-btn">Copy Output</button>
+            </div>
         </div>
 
         <div class="language-controls">
             <select id="input-language">
-                <option value="EN">English</option>
-                <option value="ID">Indonesian</option>
-                <option value="ES">Spanish</option>
-                <option value="FR">French</option>
+                <option value="en">English</option>
+                <option value="id">Indonesian</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
             </select>
             <button id="switch-lang">&#8646; Switch</button>
             <select id="output-language">
-                <option value="ID">Indonesian</option>
-                <option value="EN">English</option>
-                <option value="ES">Spanish</option>
-                <option value="FR">French</option>
+                <option value="id">Indonesian</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
             </select>
-        </div>
-
-        <button onclick="translateText()" class="translate-btn">Translate</button>
-
-        <div class="output-group">
-            <p id="translated-text">Translation will appear here...</p>
-            <button id="copy-output" class="copy-btn">Copy Output</button>
         </div>
     </div>
 
